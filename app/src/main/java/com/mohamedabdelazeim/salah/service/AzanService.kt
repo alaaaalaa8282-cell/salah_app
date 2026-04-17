@@ -55,11 +55,7 @@ class AzanService : Service() {
         // Play azan sound
         playAzan(index)
 
-        // Reschedule next day prayers
-        if (AppPrefs.isLocationSaved(this)) {
-            PrayerScheduler.scheduleAll(this, AppPrefs.getLatitude(this), AppPrefs.getLongitude(this))
-        }
-
+      
         return START_NOT_STICKY
     }
 
