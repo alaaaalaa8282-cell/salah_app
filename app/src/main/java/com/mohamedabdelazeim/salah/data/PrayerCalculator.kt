@@ -43,7 +43,7 @@ object PrayerCalculator {
         val noon = fixHour(12.0 - eqt)
         val sunriseAngle = -0.8333
         val fajrAngle = -18.0
-        val ishaAngle = -17.0
+        val ishaAngle = -19.5
 
         val fajrT = noon - timeDiff(lat, decl, fajrAngle)
         val sunriseT = noon - timeDiff(lat, decl, sunriseAngle)
