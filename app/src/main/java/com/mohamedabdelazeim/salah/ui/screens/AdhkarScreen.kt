@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.sp
 import com.mohamedabdelazeim.salah.data.AdhkarItem
 import com.mohamedabdelazeim.salah.data.AdhkarLoader
 import kotlinx.coroutines.launch
+import androidx.compose.ui.draw.clip
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable
