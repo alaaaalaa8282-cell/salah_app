@@ -79,7 +79,9 @@ class AzanService : Service() {
 
         mediaPlayer?.setOnCompletionListener { stopAzan() }
         mediaPlayer?.start()
-    }
+        val volume = AppPrefs.getAzanVolume(this)
+        mediaPlayer?.setVolume(volume, volume)
+       }
 
     fun stopAzan() {
         mediaPlayer?.stop()
