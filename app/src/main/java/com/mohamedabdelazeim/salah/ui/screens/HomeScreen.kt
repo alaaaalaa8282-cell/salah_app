@@ -254,6 +254,7 @@ fun PrayerTimesCard(prayerTimes: com.mohamedabdelazeim.salah.data.PrayerTimes, g
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ZekrCard(gold: Color, ctx: Context) {
     var enabled by remember { mutableStateOf(AppPrefs.isZekrEnabled(ctx)) }
